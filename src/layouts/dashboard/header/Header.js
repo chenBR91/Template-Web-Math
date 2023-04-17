@@ -8,9 +8,8 @@ import { bgBlur } from '../../../utils/cssStyles';
 import Iconify from '../../../components/iconify';
 //
 import Searchbar from './Searchbar';
-import AccountPopover from './AccountPopover';
 import LanguagePopover from './LanguagePopover';
-import NotificationsPopover from './NotificationsPopover';
+
 
 // ----------------------------------------------------------------------
 
@@ -38,6 +37,8 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 
 // ----------------------------------------------------------------------
 
+// use propType to validate any data reciving from props
+// key is the name of the prop <onOpenNav> and value is the propType for example: .func / .number / .string / .bool / .object
 Header.propTypes = {
   onOpenNav: PropTypes.func,
 };
@@ -69,8 +70,6 @@ export default function Header({ onOpenNav }) {
           }}
         >
           <LanguagePopover />
-          <NotificationsPopover />
-          <AccountPopover />
         </Stack>
       </StyledToolbar>
     </StyledRoot>

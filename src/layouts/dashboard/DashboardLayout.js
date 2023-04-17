@@ -3,8 +3,8 @@ import { Outlet } from 'react-router-dom';
 // @mui
 import { styled } from '@mui/material/styles';
 //
-import Header from './header';
-import Nav from './nav';
+import Header from './header/Header';
+import Nav from './nav/Nav';
 
 // ----------------------------------------------------------------------
 
